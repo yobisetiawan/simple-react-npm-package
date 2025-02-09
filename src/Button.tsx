@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles.css'
 
 interface ButtonProps {
   onClick: () => void;
@@ -7,7 +8,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ onClick, children }) => {
   return (
-    <button onClick={onClick} style={{ padding: '10px 20px', fontSize: '16px' }}>
+    <button onClick={onClick} className='yob-btn'>
       {children}
     </button>
   );
